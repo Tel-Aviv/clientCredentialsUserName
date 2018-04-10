@@ -6,7 +6,7 @@ Out of the box, WCF provides a variety of endpoint behavior extensions. Amomg th
   However, for some scenarios it is very important to have some kind of such functionality. For example, WCF Router may be configured to receive the messsages over, say, basicHttpBinding and route the to the endpoint in which userName security is used. In this case, we can not expect the client to pass the username simply because it calls the WCF Router intermediary with Windows credentials, but the destination service do expect the username authentication that must to use the values for this authentocation from somewhere.
   Logically, this "somewhere" may be an SSO system that matches Windows credentials passed to WCF Router to value pairs from affiliated app, but for simplier case these pair in non-production cases may be stored in WCF configuration file. 
   Such configuration, then, should looks like:
-      &gte;system.serviceModel&lte;
+      <system.serviceModel>
         <behaviors>
             <endpointBehaviors>
                 <behavior name="UnPBehavior">
