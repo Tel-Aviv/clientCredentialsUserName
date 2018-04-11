@@ -18,7 +18,7 @@ namespace UnPExtension
         protected override SecurityToken GetTokenCore(TimeSpan timeout)
         {
             ServiceSecurityContext ctx = ServiceSecurityContext.Current;
-            return new UserNameSecurityToken("olegk", "dfnc94^*");
+            return new UserNameSecurityToken("yyy", "xxx");
         }
 
     }
